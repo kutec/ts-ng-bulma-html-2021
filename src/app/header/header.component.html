@@ -16,6 +16,8 @@
       <div
         class="navbar-burger burger mt-3"
         data-target="navbarExampleTransparentExample"
+        (click)="menuToggle($event)"
+        [ngClass]="menuToggleFlag ? 'is-active' : ''"
       >
         <span></span>
         <span></span>
@@ -23,7 +25,11 @@
       </div>
     </div>
 
-    <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <div
+      id="navbarExampleTransparentExample"
+      class="navbar-menu"
+      [ngClass]="menuToggleFlag ? 'is-active' : ''"
+    >
       <div class="navbar-end">
         <a class="navbar-item" href="#start">
           <span class="tag is-dark is-medium is-info is-light">Start Here</span>

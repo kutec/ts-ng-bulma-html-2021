@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, ViewChild, ElementRef } from "@angular/core";
 
 @Component({
   selector: "app-header",
@@ -7,4 +7,16 @@ import { Component } from "@angular/core";
 })
 export class HeaderComponent {
   title = "header";
+  menuToggleFlag: boolean = false;
+
+  menuToggle(event: {
+    srcElement: {
+      classList: {
+        add: (arg0: string) => void;
+        remove: (arg0: string) => void;
+      };
+    };
+  }) {
+    this.menuToggleFlag = !this.menuToggleFlag;
+  }
 }
