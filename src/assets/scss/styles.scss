@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@import './variable';
+
+html,
+body {
+  font-family: sans-serif;
+  background: #f8f8f8;
+}
+
+// ts-colors
+.ts-blue { color: $ts-blue; }
+.ts-blue-bg { color: $ts-blue; color: #fff; }
+.ts-green { color: $ts-green; }
+.ts-green-bg { color: $ts-green; color: #fff; }
+
+#header{
+  background: $ts-blue;
+  .navbar-item img{
+    max-height: 100%;
+  }
+}
