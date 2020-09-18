@@ -4,7 +4,8 @@
 html,
 body {
   font-family: sans-serif;
-  background: #f8f8f8;
+  // background: #f8f8f8;
+  background: #ddd;
 }
 
 // ts-colors
@@ -14,7 +15,8 @@ body {
 .ts-green-bg { color: $ts-green; color: #fff; }
 
 #header{
-  background: $ts-blue;
+  // background: $ts-blue;
+  background: #fff;
   .navbar-item img{
     max-height: 100%;
   }
